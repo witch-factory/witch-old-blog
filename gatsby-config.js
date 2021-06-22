@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Witch-Work`,
     author: {
-      name: `Kim Sung Hyun`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `김성현(a.k.a 마녀)`,
+      summary: `기계공학과 컴퓨터공학을 복수전공하고 있습니다. 일해라 마녀! contact : soakdma37@gmail.com`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `더 나은 사람이 되기 위해서`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `NULL`,
     },
   },
   plugins: [
