@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Witch-Blog`,
+    title: `Witch-Work`,
     author: {
       name: `Kim Sung Hyun`,
       summary: `who lives and works in San Francisco building useful things.`,
