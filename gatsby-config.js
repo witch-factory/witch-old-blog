@@ -14,6 +14,19 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     {
+      resolve: 'gatsby-plugin-webfonts',
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Noto Serif KR",
+              variants: ["300", "700"],
+            },
+          ]
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
