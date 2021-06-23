@@ -6,7 +6,7 @@ module.exports = {
       summary: `기계공학과 컴퓨터공학을 복수전공하고 있습니다. 일해라 마녀! contact : soakdma37@gmail.com`,
     },
     description: `더 나은 사람이 되기 위해서`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://www.witch.work`,
     social: {
       twitter: `NULL`,
     },
