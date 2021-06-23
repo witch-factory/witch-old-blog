@@ -1,54 +1,32 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+title: 블로그 첫 글
+date: "2020-06-23T00:00:00Z"
 description: "Hello World"
 ---
+김성현입니다. 서강대학교에서 기계공학과와 컴퓨터공학과를 복전하고 있습니다. 멋진 사람들과 함께하고 싶어 공부합니다.
 
-This is my first post on my new fake blog! How exciting!
+각종 마크다운 문법입니다.
+[내 블로그 링크](https://witch-work.vercel.app/)
 
-I'm sure I'll write a lot more interesting things in the future.
+프로필 사진은 보통 이런 걸 사용합니다.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+![witch](./witch.jpg)
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+코드블럭도 쓸 수 있습니다.
 
-![Chinese Salty Egg](./salty_egg.jpg)
+```c
+#include <stdio.h>
 
-You can also write code blocks here!
-
-```js
-const saltyDuckEgg = "chinese preserved food product"
+int main(void){
+    printf("Hello World!");
+}
 ```
+#
+>인용문 등은 이렇게 꺽쇠로 씁니다.
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
-
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
-
-This is a paragraph.
-
-    This is a paragraph.
-
-# Header 1
-
-## Header 2
-
-    Header 1
-    ========
-
-    Header 2
-    --------
-
+    단락은 이렇게 들여쓰기로 씁니다.
+#
+제목은 아래처럼 #를 사용합니다. 
 # Header 1
 
 ## Header 2
@@ -68,29 +46,6 @@ This is a paragraph.
     ##### Header 5
     ###### Header 6
 
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1 #
-    ## Header 2 ##
-    ### Header 3 ###
-    #### Header 4 ####
-    ##### Header 5 #####
-    ###### Header 6 ######
-
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
 > ## This is a header.
 >
 > 1. This is the first list item.
@@ -108,6 +63,7 @@ This is a paragraph.
     >
     >     Markdown.generate();
 
+번호가 없는 항목은 다음과 같이 씁니다.
 - Red
 - Green
 - Blue
@@ -119,113 +75,19 @@ This is a paragraph.
 - Red
 - Green
 - Blue
-
-```markdown
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-```
-
-- `code goes` here in this line
-- **bold** goes here
-
-```markdown
-- `code goes` here in this line
-- **bold** goes here
-```
-
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-
-```markdown
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-```
-
-1. `code goes` here in this line
-1. **bold** goes here
-
-```markdown
-1. `code goes` here in this line
-1. **bold** goes here
-```
-
-Paragraph:
-
-    Code
-
-<!-- -->
-
-    Paragraph:
-
-        Code
+#
+`짧은 코드`
+**굵은 글씨**
+---
+분리선
 
 ---
+*****
 
----
+*이탤릭체는 별이나 언더바 한 개*
 
----
+_이탤릭체는 별이나 언더바 한 개_
 
----
+**굵은 글씨는 별이나 언더바 두 개**
 
----
-
-    * * *
-
-    ***
-
-    *****
-
-    - - -
-
-    ---------------------------------------
-
-This is [an example](http://example.com "Example") link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
-
-    This is [an example](http://example.com "Example") link.
-
-    [This link](http://example.com) has no title attr.
-
-    This is [an example] [id] reference-style link.
-
-    [id]: http://example.com "Optional Title"
-
-_single asterisks_
-
-_single underscores_
-
-**double asterisks**
-
-**double underscores**
-
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-
-This paragraph has some `code` in it.
-
-    This paragraph has some `code` in it.
-
-![Alt Text](https://placehold.it/200x50 "Image Title")
-
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
+__굵은 글씨는 별이나 언더바 두 개__
