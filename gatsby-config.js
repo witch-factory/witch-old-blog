@@ -22,6 +22,10 @@ module.exports = {
               family: "Noto Serif KR",
               variants: ["300", "700"],
             },
+            {
+              family: "Noto Sans KR",
+              variants: ["300", "700"],
+            },
           ]
         }
       }
