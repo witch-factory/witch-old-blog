@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const kebabCase = require("lodash.kebabcase")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -20,6 +21,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            frontmatter{
+              title
+              tags
+            }
           }
         }
       }
@@ -35,6 +40,28 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMarkdownRemark.nodes
+
+  let tags=[]
+
+  posts.forEach(node=>{
+    if(node.frontmatter.tags){
+      tags=tags.concat(node.frontmatter.tags)
+    }
+  })
+
+  tags=tags.filter((val,id,array)=>array.indexOf(val)==id);
+
+  const tagTemplate=path.resolve("src/templates/tags.js")
+  //make tag pages
+  tags.forEach(tag=>{
+    createPage({
+      path:`/tags/${kebabCase(tag)}/`,
+      component:tagTemplate,
+      context:{
+        tag,
+      },
+    })
+  })
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)

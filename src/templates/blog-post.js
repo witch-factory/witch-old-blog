@@ -5,12 +5,15 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import "katex/dist/katex.min.css";
+import "katex/dist/katex.min.css"
+import kebabCase from "lodash.kebabcase"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  const tags=post.frontmatter.tags || []
+
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -26,7 +29,25 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
+        <div>
+            <strong>tags:</strong>
+            <ul
+                style={{
+                    display: `flex`,
+                    flexWrap: `wrap`,
+                    justifyContent: `space-between`,
+                    listStyle: `none`,
+                }}
+            >
+                {tags.map(t => (
+                    <li key={kebabCase(t)}>
+                        <Link to={`/tags/${kebabCase(t)}`}>{t}</Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
         </header>
+
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
@@ -87,6 +108,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
