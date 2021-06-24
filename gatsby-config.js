@@ -3,7 +3,7 @@ module.exports = {
     title: `Witch-Work`,
     author: {
       name: `김성현(a.k.a 마녀)`,
-      summary: `기계공학과 컴퓨터공학을 복수전공하고 있습니다. 일해라 마녀! contact : soakdma37@gmail.com`,
+      summary: `멋진 사람들이 내는 빛을 따라가다 보니 여기까지 왔고, 앞으로도 그렇게 살고 싶습니다. 당신과도 함께할 수 있어 영광입니다. contact : soakdma37@gmail.com`,
     },
     description: `고인물들 그림자 따라가는 중`,
     siteUrl: `https://www.witch.work`,

@@ -44,7 +44,7 @@ const Bio = () => {
             />
             {author?.name && (
                 <p>
-                    <strong>{author.name}</strong>의 블로그입니다. {author?.summary || null}
+                    <strong>{author.name}</strong>입니다. {author?.summary || null}
                     {` `}
                     {/*
             <a href={`https://twitter.com/${social?.twitter || ``}`}>
