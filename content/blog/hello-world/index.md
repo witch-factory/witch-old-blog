@@ -10,7 +10,7 @@ description: "자기소개 + Markdown 문법"
 
 프로필 사진은 보통 이런 걸 사용합니다.
 
-![witch](./witch.jpg)
+![witch](../../assets/witch.jpg)
 
 코드블럭도 쓸 수 있습니다.
 
