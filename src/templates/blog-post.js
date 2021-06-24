@@ -29,30 +29,24 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-        <div>
-            <strong>tags:</strong>
-            <ul
-                style={{
-                    display: `flex`,
-                    flexWrap: `wrap`,
-                    justifyContent: `space-between`,
-                    listStyle: `none`,
-                }}
-            >
-                {tags.map(t => (
-                    <li key={kebabCase(t)}>
-                        <Link to={`/tags/${kebabCase(t)}`}>{t}</Link>
-                    </li>
-                ))}
-            </ul>
-        </div>
-        </header>
 
+        </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
         <hr />
+          <div>
+              <h5><strong>tags:</strong></h5>
+              {tags.map(t=>(
+                  <div>
+                      <div key={kebabCase(t)}>
+                          <Link to={`/tags/${kebabCase(t)}`}>{t}</Link>
+                      </div>
+                  </div>
+              ))}
+          </div>
+          <p></p>
         <footer>
           <Bio />
         </footer>
