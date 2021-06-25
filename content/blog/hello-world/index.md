@@ -1,11 +1,10 @@
 ---
 title: 블로그 첫 글
 date: "2021-06-23T00:00:00Z"
-description: "자기소개 + Markdown 문법"
+description: "간단한 Markdown 문법"
 tags: ["intro"]
 templateKey: blog-post
 ---
-김성현입니다. 서강대학교에서 기계공학과와 컴퓨터공학과를 복전하고 있습니다. 멋진 사람들과 함께하고 싶어 공부합니다.
 
 각종 마크다운 문법입니다.
 [내 블로그 링크](https://witch-work.vercel.app/)
