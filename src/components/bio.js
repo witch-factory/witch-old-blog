@@ -17,8 +17,6 @@ const Bio = () => {
           author {
             name
             comment
-            info
-            contact
           }
           social {
             twitter
@@ -47,10 +45,6 @@ const Bio = () => {
             {author?.name && (
                 <p>
                     <p><strong>{author.name}</strong>입니다. {author?.comment || null}</p>
-                    {` `}
-                    <br></br>
-                    <p><strong>Info : </strong>{author.info||null}</p>
-                    <p><strong>Contact : </strong>{author.contact||null}</p>
                 </p>
             )}
         </div>
