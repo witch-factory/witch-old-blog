@@ -3,9 +3,11 @@ module.exports = {
     title: `Witch-Work`,
     author: {
       name: `김성현(a.k.a 마녀)`,
-      summary: `멋진 사람들이 내는 빛을 따라가다 보니 여기까지 왔고, 앞으로도 그렇게 살고 싶습니다. 당신과도 함께할 수 있어 영광입니다. contact : soakdma37@gmail.com`,
+      comment: `멋진 사람들이 내는 빛을 따라가다 보니 여기까지 왔고, 앞으로도 그렇게 살고 싶습니다. 당신과도 함께할 수 있어 영광입니다.`,
+      info: `서강대학교에서 기계공학과 컴퓨터공학을 복수전공 중입니다. 로봇공학 및 지능형 메커니즘 연구실 소속이며 여러 스터디를 이끌고 있습니다.`,
+      contact: `soakdma37@gmail.com`,
     },
-    description: `고인물들 그림자 따라가는 중`,
+    description: `고수들의 그림자를 따라가는 중`,
     siteUrl: `https://www.witch.work`,
     social: {
       twitter: `NULL`,

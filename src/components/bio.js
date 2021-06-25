@@ -16,7 +16,9 @@ const Bio = () => {
         siteMetadata {
           author {
             name
-            summary
+            comment
+            info
+            contact
           }
           social {
             twitter
@@ -44,13 +46,11 @@ const Bio = () => {
             />
             {author?.name && (
                 <p>
-                    <strong>{author.name}</strong>입니다. {author?.summary || null}
+                    <p><strong>{author.name}</strong>입니다. {author?.comment || null}</p>
                     {` `}
-                    {/*
-            <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-            */}
+                    <br></br>
+                    <p><strong>Info : </strong>{author.info||null}</p>
+                    <p><strong>Contact : </strong>{author.contact||null}</p>
                 </p>
             )}
         </div>
