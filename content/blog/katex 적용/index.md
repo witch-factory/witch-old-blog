@@ -2,8 +2,9 @@
 title: Katex Test
 date: "2021-06-24T00:00:00Z"
 description: "Katex 적용 테스트"
-tags: ["katex", "test"]
+tags: ["katex", "intro"]
+templateKey: blog-post
 ---
 
-$L = \frac{1}{2} \rho v^2 S C_L$
+$a^2 + b^2 = c^2$
 인라인

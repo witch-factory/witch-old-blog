@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 var kebabCase = require("lodash.kebabcase")
 
@@ -15,7 +15,7 @@ const TagsPage = ({
                       location,
                   }) => (
     <Layout location={location} title={title}>
-        <SEO
+        <Seo
             title="all tags"
             keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />

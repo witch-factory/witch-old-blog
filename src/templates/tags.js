@@ -2,7 +2,7 @@ import React from "react"
 
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Tags = ({ pageContext, data, location }) => {
     const { tag } = pageContext
@@ -14,7 +14,7 @@ const Tags = ({ pageContext, data, location }) => {
 
     return (
         <Layout location={location} title={siteTitle}>
-            <SEO title={tagHeader} />
+            <Seo title={tagHeader} />
             <h1>{tagHeader}</h1>
             <ul>
                 {edges.map(({ node }) => {

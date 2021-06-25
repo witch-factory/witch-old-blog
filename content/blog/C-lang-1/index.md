@@ -3,6 +3,7 @@ title: C-through - 1.1. 개론
 date: "2021-06-25T00:00:00Z"
 description: "부제 : C언어와 떠나는 여행 - 1.1 개론"
 tags: ["C", "language"]
+templateKey: blog-post
 ---
 ## 목차
 
