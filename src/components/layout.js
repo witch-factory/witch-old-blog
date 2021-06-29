@@ -25,7 +25,8 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">
         {header}
-        <Menubar/>
+        {(isRootPath?<Menubar/>:null)}
+        {/* 홈에 있을 때만 메뉴바 보이게 */}
       </header>
 
       <main>{children}</main>
