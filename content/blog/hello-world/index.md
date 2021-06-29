@@ -3,7 +3,6 @@ title: 블로그 첫 글
 date: "2021-06-23T00:00:00Z"
 description: "간단한 Markdown 문법"
 tags: ["intro"]
-templateKey: blog-post
 ---
 
 각종 마크다운 문법입니다.

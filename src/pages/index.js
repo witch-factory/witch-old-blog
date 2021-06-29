@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Menubar from "../components/menubar";
 
 
 const BlogIndex = ({ data, location }) => {
@@ -29,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-        <Menubar/>
+
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -76,7 +75,6 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-        filter: {frontmatter: { templateKey: { eq: "blog-post" } } }
         sort: { fields: [frontmatter___date], order: DESC }
     ) {
       nodes {

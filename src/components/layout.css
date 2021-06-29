@@ -1,14 +1,15 @@
-.home_menu_bar{
+.home-menu-bar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
     color: black;
-    margin-left: 1.58rem;
+    margin-left:1.58rem;
     font-size:1.5rem;
 }
 
-a{
+.home-menu-item{
+    margin:1rem 1rem 0 1rem;
     text-decoration: none;
     color:black;
 }

@@ -3,7 +3,6 @@ title: 블로그 리뉴얼 - 1.시작
 date: "2021-06-27T00:00:00Z"
 description: "블로그 리뉴얼 - 시작"
 tags: ["blog", "coding"]
-templateKey: blog-post
 ---
 ##목차
 

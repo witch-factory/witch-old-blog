@@ -254,6 +254,7 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+  display: flex;
 }
 
 .main-heading {

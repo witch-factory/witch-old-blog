@@ -38,10 +38,10 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
           <div>
               <h5><strong>tags:</strong></h5>
-              {tags.map(t=>(
+              {tags.map(tag=>(
                   <div>
-                      <div key={kebabCase(t)}>
-                          <Link to={`/tags/${kebabCase(t)}`}>{t}</Link>
+                      <div key={kebabCase(tag)}>
+                          <Link to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
                       </div>
                   </div>
               ))}
