@@ -1,0 +1,21 @@
+.toc-container{
+    background-color:#f1f3f5;
+}
+
+.toc-contents ul{
+    list-style: none;
+}
+
+.toc-contents ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    color: black;
+    margin:1px;
+    font-size:1.2rem;
+}
+
+.toc-contents a{
+    color:black;
+}

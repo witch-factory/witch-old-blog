@@ -1,11 +1,12 @@
 import * as React from "react"
-import {graphql} from "gatsby";
+import './toc.css'
 
 const TableOfContents=({data})=>{
   return(
     <div className="toc-container">
       <h3>Contents</h3>
-      <div className="toc" dangerouslySetInnerHTML={{__html:data.markdownRemark.tableOfContents}} />
+      <div className="toc-contents" dangerouslySetInnerHTML={{__html:data}} />
+
     </div>
   )
 

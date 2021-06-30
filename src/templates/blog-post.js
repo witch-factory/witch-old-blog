@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-          <TableofContents data={data}/>
+          <TableofContents data={data.markdownRemark.tableOfContents}/>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
