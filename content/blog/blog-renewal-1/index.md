@@ -4,7 +4,6 @@ date: "2021-06-27T00:00:00Z"
 description: "블로그 리뉴얼 - 시작"
 tags: ["blog", "coding"]
 ---
-## 목차
 
 ### 1. 블로그의 개조
 현재 내 블로그는 [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog) 를 사용해서 구성한 상태이다.
