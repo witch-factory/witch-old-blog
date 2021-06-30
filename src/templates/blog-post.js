@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import TableofContents from "../components/toc"
 
 import "katex/dist/katex.min.css"
 import kebabCase from "lodash.kebabcase"
@@ -29,7 +30,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-
+          <TableofContents data={data}/>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -98,6 +99,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+        tableOfContents
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
